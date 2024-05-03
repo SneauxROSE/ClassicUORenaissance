@@ -427,6 +427,8 @@ namespace ClassicUO.Game.Scenes
             {
                 CurrentLoginStep = LoginSteps.CharacterCreation;
             }
+			
+            Client.Game.Audio.PlayMusic(Client.Game.Audio.CreateMusicIndex, false, true);
         }
 
         public void CreateCharacter(PlayerMobile character, int cityIndex, byte profession)

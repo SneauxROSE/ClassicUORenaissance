@@ -121,17 +121,17 @@ namespace ClassicUO.Game.UI.Gumps.CharCreation
             };
 
 
-            if (Client.Game.UO.Version >= ClientVersion.CV_70130)
+            /*if (Client.Game.UO.Version >= ClientVersion.CV_70130)
             {
                 Add(new GumpPic(62, 54, (ushort) (0x15D9 + map), 0));
                 Add(new GumpPic(57, 49, 0x15DF, 0));
                 _facetName.Text = _cityNames[map];
             }
             else
-            {
+            {*/
                 Add(new GumpPic(57, 49, 0x1598, 0));
                 _facetName.IsVisible = false;
-            }
+            //}
 
             if (CUOEnviroment.IsOutlands)
             {

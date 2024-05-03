@@ -50,6 +50,7 @@ namespace ClassicUO.Game.Managers
         private readonly UOMusic[] _currentMusic = { null, null };
         private readonly int[] _currentMusicIndices = { 0, 0 };
         public int LoginMusicIndex { get; private set; }
+        public int CreateMusicIndex { get; } = 103;
         public int DeathMusicIndex { get; } = 42;
 
         public void Initialize()
